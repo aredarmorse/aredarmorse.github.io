@@ -1,87 +1,49 @@
 # ---------------------------------------------------------------
 # Site Settings
 # ---------------------------------------------------------------
-title: "Jane Doe"
-title_separator: "|"
-subtitle: "Software Engineer & Data Analyst"
-name: "Jane Doe"
-description: "Personal portfolio and technical blog."
-url: "https://username.github.io" # Replace with your GitHub username URL
-baseurl: "" # Leave empty if hosting at username.github.io root
+title: "Jane Doe | Software Engineer"
+email: "jane.doe@example.com"
+description: >- # This breaks long text into clean multi-line YAML
+  Portfolio showcasing my projects, technical skills, and software engineering experience.
+baseurl: "" # Leave as "" if using a custom domain or username.github.io. 
+            # Use "/repository-name" if hosted at username.github.io/repository-name.
+url: "https://janedoe.github.io" # Your base hostname & protocol
 
 # ---------------------------------------------------------------
-# Theme & Skin Configuration
-# ---------------------------------------------------------------
-# Minimal Mistakes layout plugin
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
-# Color Skins: air, aqua, contrast, dark, dirt, neon, plum, sunrise, etc.
-minimal_mistakes_skin: "dark"
-
-# ---------------------------------------------------------------
-# Author / Sidebar Information
+# Author & Bio Details
 # ---------------------------------------------------------------
 author:
   name: "Jane Doe"
-  avatar: "logo.jpeg" # Place your image in assets/images/
-  bio: "Building data solutions and web applications."
+  bio: "Full-Stack Developer specializing in Python, React, and Cloud Architecture."
+  avatar: "logo.jpg"
   location: "London, UK"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/username"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/username"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:jane.doe@example.com"
 
 # ---------------------------------------------------------------
-# Site Navigation & Defaults
+# Social Media & Contact Links
 # ---------------------------------------------------------------
-markdown: kramdown
-highlighter: rouge
-paginate: 5
-paginate_path: "/page:num/"
-
-# Enable breadcrumb navigation
-breadcrumbs: true
-
-# Defaults for pages and posts
-defaults:
-  # Posts setup
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single"
-      author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
-  # Pages setup
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
+social_links:
+  github: "janedoe"
+  linkedin: "jane-doe-dev"
+  twitter: "janedoe_dev"
+  email: "jane.doe@example.com"
 
 # ---------------------------------------------------------------
-# Plugins Required for GitHub Pages
+# Build Settings & Plugins
 # ---------------------------------------------------------------
+theme: minima # Options: minima, Cayman, architect, tactile, slate, midnight
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Exclude unnecessary files from build
+# ---------------------------------------------------------------
+# File Exclusion (Prevents deployment bloat)
+# ---------------------------------------------------------------
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - node_modules
+  - node_modules/
   - README.md
