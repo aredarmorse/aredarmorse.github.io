@@ -1,49 +1,6 @@
-# ---------------------------------------------------------------
-# Site Settings
-# ---------------------------------------------------------------
-title: "Jane Doe | Software Engineer"
-email: "jane.doe@example.com"
-description: >- # This breaks long text into clean multi-line YAML
-  Portfolio showcasing my projects, technical skills, and software engineering experience.
-baseurl: "" # Leave as "" if using a custom domain or username.github.io. 
-            # Use "/repository-name" if hosted at username.github.io/repository-name.
-url: "https://aredarmorse.github.io/" # Your base hostname & protocol
-
-# ---------------------------------------------------------------
-# Author & Bio Details
-# ---------------------------------------------------------------
-author:
-  name: "Jane Doe"
-  bio: "Full-Stack Developer specializing in Python, React, and Cloud Architecture."
-  avatar: "logo.jpg"
-  location: "London, UK"
-
-# ---------------------------------------------------------------
-# Social Media & Contact Links
-# ---------------------------------------------------------------
-social_links:
-  github: "janedoe"
-  linkedin: "jane-doe-dev"
-  twitter: "janedoe_dev"
-  email: "jane.doe@example.com"
-
-# ---------------------------------------------------------------
-# Build Settings & Plugins
-# ---------------------------------------------------------------
-theme: minima # Options: minima, Cayman, architect, tactile, slate, midnight
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# ---------------------------------------------------------------
-# File Exclusion (Prevents deployment bloat)
-# ---------------------------------------------------------------
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - README.md
+title: Gbenga Adesoji
+logo: logo.jpeg
+description: A Data Analyst with 4 years of experience with microsoft excel for data reportinng, SQL for data interrogation and manipulation and Power BI for data insights.
+#show_downloads: true
+#google_analytics:
+theme: jekyll-theme-minimal
