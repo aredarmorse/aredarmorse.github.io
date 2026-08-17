@@ -7,7 +7,7 @@ description: >- # This breaks long text into clean multi-line YAML
   Portfolio showcasing my projects, technical skills, and software engineering experience.
 baseurl: "" # Leave as "" if using a custom domain or username.github.io. 
             # Use "/repository-name" if hosted at username.github.io/repository-name.
-url: "https://janedoe.github.io" # Your base hostname & protocol
+url: "https://aredarmorse.github.io/" # Your base hostname & protocol
 
 # ---------------------------------------------------------------
 # Author & Bio Details
