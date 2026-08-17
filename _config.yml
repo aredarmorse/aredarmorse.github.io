@@ -1,6 +1,87 @@
-title: Gbenga Adesoji
-logo: logo.jpeg
-description: A Data Analyst with 4 years of experience with microsoft excel for data reportinng, SQL for data interrogation and manipulation and Power BI for data insights.
-#show_downloads: true
-#google_analytics:
-theme: jekyll-theme-minimal
+# ---------------------------------------------------------------
+# Site Settings
+# ---------------------------------------------------------------
+title: "Jane Doe"
+title_separator: "|"
+subtitle: "Software Engineer & Data Analyst"
+name: "Jane Doe"
+description: "Personal portfolio and technical blog."
+url: "https://username.github.io" # Replace with your GitHub username URL
+baseurl: "" # Leave empty if hosting at username.github.io root
+
+# ---------------------------------------------------------------
+# Theme & Skin Configuration
+# ---------------------------------------------------------------
+# Minimal Mistakes layout plugin
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Color Skins: air, aqua, contrast, dark, dirt, neon, plum, sunrise, etc.
+minimal_mistakes_skin: "dark"
+
+# ---------------------------------------------------------------
+# Author / Sidebar Information
+# ---------------------------------------------------------------
+author:
+  name: "Jane Doe"
+  avatar: "logo.jpeg" # Place your image in assets/images/
+  bio: "Building data solutions and web applications."
+  location: "London, UK"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/username"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/username"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:jane.doe@example.com"
+
+# ---------------------------------------------------------------
+# Site Navigation & Defaults
+# ---------------------------------------------------------------
+markdown: kramdown
+highlighter: rouge
+paginate: 5
+paginate_path: "/page:num/"
+
+# Enable breadcrumb navigation
+breadcrumbs: true
+
+# Defaults for pages and posts
+defaults:
+  # Posts setup
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # Pages setup
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
+
+# ---------------------------------------------------------------
+# Plugins Required for GitHub Pages
+# ---------------------------------------------------------------
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Exclude unnecessary files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
